@@ -107,8 +107,8 @@ More commands for training various teacher-student pairs can be found in `train_
 
 - `Teacher` : training teacher networks by (1).
 - `Teacher*` : training teacher networks by (2).
-- `HSAKD` : training student networks by (1).
-- `HSAKD*` : training student networks by (2).
+- `HSAKD` : training student networks by `Teacher`.
+- `HSAKD*` : training student networks by `Teacher*`.
 
 #### Training student networks under few-shot scenario
 ```
