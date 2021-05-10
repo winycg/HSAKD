@@ -190,7 +190,7 @@ sudo python train_teacher_imagenet.py
     --dist-backend 'nccl' \
     --multiprocessing-distributed \
     --checkpoint-dir ./checkpoint/ \
-    --pretrained-backbone /home/ycg/hhd/pretrained_models/resnet34-333f7ec4.pth \
+    --pretrained-backbone ./pretrained_backbones/resnet34-333f7ec4.pth \
     --freezed \
     --gpu 0,1,2,3,4,5,6,7 \
     --world-size 1 --rank 0 --manual_seed 0
