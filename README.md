@@ -218,7 +218,7 @@ sudo python train_student_imagenet.py \
     --data ./data/ImageNet/ \
     --arch resnet18_imagenet_aux \
     --tarch resnet34_imagenet_aux \
-    --tcheckpoint ./checkpoint/train_teacher_imagenet_arch_resnet34_aux_dataset_imagenet_seed0/resnet34_aux_best.pth.tar \
+    --tcheckpoint ./checkpoint/train_teacher_imagenet_arch_resnet34_aux_dataset_imagenet_seed0/resnet34_imagenet_aux_best.pth.tar \
     --dist-url 'tcp://127.0.0.1:2222' \
     --dist-backend 'nccl' \
     --multiprocessing-distributed \
@@ -232,7 +232,7 @@ sudo python train_student_imagenet.py \
     --data ./data/ImageNet/ \
     --arch resnet18_imagenet_aux \
     --tarch resnet34_imagenet_aux \
-    --tcheckpoint ./checkpoint/train_teacher_imagenet_arch_resnet34_aux_dataset_imagenet_seed1/resnet34_aux_best.pth.tar \
+    --tcheckpoint ./checkpoint/train_teacher_imagenet_arch_resnet34_aux_dataset_imagenet_seed1/resnet34_imagenet_aux_best.pth.tar \
     --dist-url 'tcp://127.0.0.1:2222' \
     --dist-backend 'nccl' \
     --multiprocessing-distributed \
