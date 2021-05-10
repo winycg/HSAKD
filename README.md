@@ -237,12 +237,13 @@ sudo python train_student_imagenet.py \
     --dist-backend 'nccl' \
     --multiprocessing-distributed \
     --gpu-id 0,1,2,3,4,5,6,7 \
-    --world-size 1 --rank 0 --manual_seed 0
+    --world-size 1 --rank 0 --manual_seed 1
 ```
 
 ####  Results on the teacher-student pair of ResNet-34 and ResNet-18 
 
 | Accuracy |Teacher |Teacher* | Student  |  HSAKD | HSAKD* |
 |:---------------:|:-----------------:|:-----------------:|:-----------------:|:--------------------:|:--------------------:|
-| Top-1 | 73.31 | 75.46 | 69.75 | 72.16 | **72.39** |
-| Top-5 | 91.42 | 92.58 | 89.07 | 90.85 | **91.00** |
+| Top-1 | 73.31 | 75.48 | 69.75 | 72.16 | **72.39** |
+| Top-5 | 91.42 | 92.67 | 89.07 | 90.85 | **91.00** |
+| Pretrained Models | [resnet34_0](https://drive.google.com/file/d/1FojZDTafcQj4-vu9TKuq_ss36mbCp3UJ/view?usp=sharing) | [resnet34_1](https://drive.google.com/file/d/1LtZSKtAVr30xn8Yb3FIm-xd5HTsSAwX1/view?usp=sharing) | [resnet18](https://download.pytorch.org/models/resnet18-5c106cde.pth) | [resnet18_0](https://drive.google.com/file/d/1jqoNEAkNgHpX6HS6nyWegMfHMisl2020/view?usp=sharing)| [resnet18_1](https://drive.google.com/file/d/1O5yM-3rJvsU6nrAqCncVMNSZ6HsJTKQN/view?usp=sharing) |
