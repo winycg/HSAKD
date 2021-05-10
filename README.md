@@ -105,6 +105,10 @@ More commands for training various teacher-student pairs can be found in `train_
 | HSAKD | 77.45±0.21 | 78.79±0.11 | 78.51±0.20 | 79.93±0.11 |
 | HSAKD* | **79.27**±0.12 | **79.43**±0.24 | **80.11**±0.32 | **80.86**±0.15|
 
+- `Teacher` : training teacher networks by (1).
+- `Teacher*` : training teacher networks by (2).
+- `HSAKD` : training student networks by (1).
+- `HSAKD*` : training student networks by (2).
 
 #### Training student networks under few-shot scenario
 ```
