@@ -357,7 +357,7 @@ def main_worker(gpu, ngpus_per_node, args):
             print('test epoch:{}\nTest Top-1 ss_accuracy: {}\nTest Top-5 ss_accuracy: {}\nTest Top-1 class_accuracy: {}\nTop-5 class_accuracy: {}\n'.format(
                 epoch, str(ss_acc1), str(ss_acc5), str(class_acc1), str(class_acc5)))
 
-        return max(class_acc1)
+        return class_acc1[-1]
 
     if args.evaluate: 
         print('load pre-trained weights from: {}'.format(args.checkpoint_dir, str(model.__name__) + '_best.pth.tar'))     

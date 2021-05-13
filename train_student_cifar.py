@@ -326,7 +326,7 @@ def test(epoch, criterion_cls, net):
                     .format(epoch, test_loss_cls, str(ss_acc1), str(class_acc1)))
         print('test epoch:{}\nTest Top-1 ss_accuracy: {}\nTest Top-1 class_accuracy: {}\n'.format(epoch, str(ss_acc1), str(class_acc1)))
 
-    return max(class_acc1)
+    return class_acc1[-1]
 
 
 if __name__ == '__main__':
