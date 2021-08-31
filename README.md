@@ -3,6 +3,12 @@
 
 This project provides source code for our Hierarchical Self-supervised Augmented Knowledge Distillation (HSAKD).
 
+This paper is publicly available at the IJCAI official proceedings: [https://www.ijcai.org/proceedings/2021/0168.pdf](https://www.ijcai.org/proceedings/2021/0168.pdf)
+
+Our poster presentation is publicly available at [https://github.com/winycg/HSAKD/pdfs/765_IJCAI_poster.pdf](765_IJCAI_poster.pdf)
+
+Our sildes of oral presentation is publicly available at [[https://github.com/winycg/HSAKD/pdfs/765_IJCAI_slides.pdf](765_IJCAI_slides.pdf)
+
 ## Installation
 
 ### Requirements
@@ -251,3 +257,16 @@ sudo python train_student_imagenet.py \
 | Top-1 | 73.31 | 75.48 | 69.75 | 72.16 | **72.39** |
 | Top-5 | 91.42 | 92.67 | 89.07 | 90.85 | **91.00** |
 | Pretrained Models | [resnet34_0](https://drive.google.com/file/d/1FojZDTafcQj4-vu9TKuq_ss36mbCp3UJ/view?usp=sharing) | [resnet34_1](https://drive.google.com/file/d/1LtZSKtAVr30xn8Yb3FIm-xd5HTsSAwX1/view?usp=sharing) | [resnet18](https://download.pytorch.org/models/resnet18-5c106cde.pth) | [resnet18_0](https://drive.google.com/file/d/1jqoNEAkNgHpX6HS6nyWegMfHMisl2020/view?usp=sharing)| [resnet18_1](https://drive.google.com/file/d/1O5yM-3rJvsU6nrAqCncVMNSZ6HsJTKQN/view?usp=sharing) |
+
+
+## Citation
+
+```
+@inproceedings{yang2021hsakd,
+  title={Hierarchical Self-supervised Augmented Knowledge Distillation},
+  author={Chuanguang Yang, Zhulin An, Linhang Cai, Yongjun Xu},
+  booktitle={Proceedings of the Thirtieth International Joint Conference on Artificial Intelligence (IJCAI)},
+  pages = {1217--1223},
+  year={2021}
+}
+```
