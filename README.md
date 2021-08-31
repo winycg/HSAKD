@@ -5,9 +5,9 @@ This project provides source code for our Hierarchical Self-supervised Augmented
 
 This paper is publicly available at the IJCAI official proceedings: [https://www.ijcai.org/proceedings/2021/0168.pdf](https://www.ijcai.org/proceedings/2021/0168.pdf)
 
-Our poster presentation is publicly available at [https://github.com/winycg/HSAKD/pdfs/765_IJCAI_poster.pdf](765_IJCAI_poster.pdf)
+Our poster presentation is publicly available at [765_IJCAI_poster.pdf](https://github.com/winycg/HSAKD/tree/main/poster/765_IJCAI_poster.pdf)
 
-Our sildes of oral presentation is publicly available at [[https://github.com/winycg/HSAKD/pdfs/765_IJCAI_slides.pdf](765_IJCAI_slides.pdf)
+Our sildes of oral presentation is publicly available at [765_IJCAI_slides.pdf](https://github.com/winycg/HSAKD/tree/main/poster/765_IJCAI_slides.pdf)
 
 ## Installation
 
