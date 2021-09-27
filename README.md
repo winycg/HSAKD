@@ -56,6 +56,9 @@ python train_teacher_cifar.py \
 
 More commands for training various teacher networks with frozen backbones can be found in `train_teacher_freezed.sh`
 
+The pre-trained teacher networks can be downloaded from [Google Derive](https://drive.google.com/drive/folders/10t6ehp_9qL8iXTLL2k7gAQeyHMCCwnxD?usp=sharing)
+
+
 (2) Train the backbone and all auxiliary classifiers jointly from scratch. In this case, we no longer need a pre-trained teacher backbone.
 
 It can lead to a better accuracy for teacher backbone towards our empirical study.
@@ -67,7 +70,7 @@ python train_teacher_cifar.py \
     --gpu 2 --manual 1
 ```
 
-The pre-trained teacher networks can be downloaded from [Google Derive](https://drive.google.com/drive/folders/18hhFrGtJmpJ8J54yCI6KmgmD17xyqkjg?usp=sharing)
+The pre-trained teacher networks can be downloaded from [Google Derive](https://drive.google.com/drive/folders/1TIzxjUQ1MKUjdZux5EBoaLI3QbuFnDyy?usp=sharing)
 
 For differentiating (1) and (2), we use `--manual 0` to indicate the case of (1) and `--manual 1` to indicate the case of (2)
 #### Training student networks
