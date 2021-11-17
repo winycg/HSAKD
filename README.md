@@ -1,13 +1,18 @@
 
 # Hierarchical Self-supervised Augmented Knowledge Distillation
 
-This project provides source code for our Hierarchical Self-supervised Augmented Knowledge Distillation (HSAKD).
+- This project provides source code for our Hierarchical Self-supervised Augmented Knowledge Distillation (HSAKD).
 
-This paper is publicly available at the IJCAI official proceedings: [https://www.ijcai.org/proceedings/2021/0168.pdf](https://www.ijcai.org/proceedings/2021/0168.pdf)
+- This paper is publicly available at the official IJCAI proceedings: [https://www.ijcai.org/proceedings/2021/0168.pdf](https://www.ijcai.org/proceedings/2021/0168.pdf)
 
-Our poster presentation is publicly available at [765_IJCAI_poster.pdf](https://github.com/winycg/HSAKD/tree/main/poster/765_IJCAI_poster.pdf)
+- Our poster presentation is publicly available at [765_IJCAI_poster.pdf](https://github.com/winycg/HSAKD/tree/main/poster/765_IJCAI_poster.pdf)
 
-Our sildes of oral presentation is publicly available at [765_IJCAI_slides.pdf](https://github.com/winycg/HSAKD/tree/main/poster/765_IJCAI_slides.pdf)
+- Our sildes of oral presentation are publicly available at [765_IJCAI_slides.pdf](https://github.com/winycg/HSAKD/tree/main/poster/765_IJCAI_slides.pdf)
+
+- 🏆 __SOTA of Knowledge Distillation for ResNet-18 by ResNet-34 on ImageNet.__ 
+
+
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/hierarchical-self-supervised-augmented/knowledge-distillation-on-imagenet)](https://paperswithcode.com/sota/knowledge-distillation-on-imagenet?p=hierarchical-self-supervised-augmented)
 
 ## Installation
 
