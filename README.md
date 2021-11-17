@@ -9,7 +9,7 @@
 
 - Our sildes of oral presentation are publicly available at [765_IJCAI_slides.pdf](https://github.com/winycg/HSAKD/tree/main/poster/765_IJCAI_slides.pdf)
 
-- 🏆 __SOTA of Knowledge Distillation for ResNet-18 by ResNet-34 on ImageNet.__ 
+- 🏆 __SOTA of Knowledge Distillation for student ResNet-18 trained by teacher ResNet-34 on ImageNet.__ 
 
 
 [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/hierarchical-self-supervised-augmented/knowledge-distillation-on-imagenet)](https://paperswithcode.com/sota/knowledge-distillation-on-imagenet?p=hierarchical-self-supervised-augmented)
