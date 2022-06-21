@@ -1,0 +1,14 @@
+==========
+Args:Namespace(arch='vgg13_vgg13', batch_size=64, checkpoint_dir='./checkpoint/train_online_kd_cifar_arch_vgg13_vgg13_dataset_cifar100_seed0', data='/home/ycg/hhd/dataset/', dataset='cifar100', epochs=1, evaluate=False, gpu_id='0', init_lr=0.01, kd_T=3, log_dir='train_online_kd_cifar_arch_vgg13_vgg13_dataset_cifar100_seed0', log_txt='result/train_online_kd_cifar_arch_vgg13_vgg13_dataset_cifar100_seed0.txt', lr_type='multistep', manual_seed=0, milestones=[150, 180, 210], num_workers=8, resume=False, sgdr_t=300, warmup_epoch=0, weight_decay=0.0005)
+==========
+Epoch:0	 lr:0.01000	 duration:328.339
+train_loss:47.54712	 train_loss_cls:47.17569	 train_loss_div:0.37144
+Train Top-1 ss_accuracy: [[0.0723, 0.0707, 0.0689, 0.0554], [0.0712, 0.0725, 0.0684, 0.0544]]
+Train Top-1 class_accuracy: [[0.1073, 0.1076, 0.105, 0.0972, 0.1358], [0.108, 0.1085, 0.1067, 0.0967, 0.1347]]
+test epoch:0	 test_loss_cls:6.37198
+Top-1 ss_accuracy: [[0.1212, 0.1165, 0.1168, 0.1013], [0.1273, 0.1228, 0.1222, 0.1049]]
+Top-1 class_accuracy: [[0.1454, 0.1431, 0.1458, 0.1465, 0.2097], [0.1505, 0.1495, 0.1487, 0.1491, 0.2144]]
+test epoch:0	 test_loss_cls:6.37198
+Top-1 ss_accuracy: [[0.1212, 0.1165, 0.1168, 0.1013], [0.1273, 0.1228, 0.1222, 0.1049]]
+Top-1 class_accuracy: [[0.1454, 0.1431, 0.1458, 0.1465, 0.2097], [0.1505, 0.1495, 0.1487, 0.1491, 0.2144]]
+best_accuracy: 0.2144 

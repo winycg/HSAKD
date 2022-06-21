@@ -29,7 +29,7 @@ PyTorch 1.6.0
 NCCL for CUDA 11.1
 
 
-## Perform experiments on CIFAR-100 dataset
+## Perform Offline KD experiments on CIFAR-100 dataset
 #### Dataset
 CIFAR-100 : [download](http://www.cs.toronto.edu/~kriz/cifar-100-python.tar.gz)
 
@@ -39,7 +39,7 @@ unzip to the `./data` folder
 ```
 python train_baseline_cifar.py --arch wrn_16_2 --data ./data/  --gpu 0
 ```
-More commands for training various architectures can be found in `train_baseline_cifar.sh`
+More commands for training various architectures can be found in [train_baseline_cifar.sh](https://github.com/winycg/HSAKD/blob/main/train_baseline_cifar.sh)
 
 #### Training teacher networks
 (1) Use pre-trained backbone and train all auxiliary classifiers. 
@@ -59,7 +59,7 @@ python train_teacher_cifar.py \
 ```
 
 
-More commands for training various teacher networks with frozen backbones can be found in `train_teacher_freezed.sh`
+More commands for training various teacher networks with frozen backbones can be found in [train_teacher_freezed.sh](https://github.com/winycg/HSAKD/blob/main/train_teacher_freezed.sh)
 
 The pre-trained teacher networks can be downloaded from [Google Derive](https://drive.google.com/drive/folders/10t6ehp_9qL8iXTLL2k7gAQeyHMCCwnxD?usp=sharing)
 
@@ -83,7 +83,7 @@ For differentiating (1) and (2), we use `--manual 0` to indicate the case of (1)
 ```
 python train_baseline_cifar.py --arch wrn_16_2 --data ./data/  --gpu 0
 ```
-More commands for training various teacher-student pairs can be found in `train_baseline_cifar.sh`
+More commands for training various teacher-student pairs can be found in [train_baseline_cifar.sh](https://github.com/winycg/HSAKD/blob/main/train_baseline_cifar.sh)
 
 (2) train student networks with a pre-trained teacher network
 
@@ -99,7 +99,7 @@ python train_student_cifar.py \
     --gpu 0 --manual 0
 ```
 
-More commands for training various teacher-student pairs can be found in `train_student_cifar.sh`
+More commands for training various teacher-student pairs can be found in [train_student_cifar.sh](https://github.com/winycg/HSAKD/blob/main/train_student_cifar.sh)
 
 ####  Results of the same architecture style between teacher and student networks
 
@@ -178,7 +178,7 @@ python eval_rep.py \
 |:---------------:|:-----------------:|:-----------------:|
 | Student | 74.66 | 42.57 |
 
-## Perform experiments on ImageNet dataset
+## Perform Offline KD experiments on ImageNet dataset
 
 ### Dataset preparation
 
@@ -200,7 +200,7 @@ data/ImageNet
 ### Training teacher networks
 (1) Use pre-trained backbone and train all auxiliary classifiers. 
 
-The pre-trained backbone weights of ResNet-34 follow the `resnet34-333f7ec4.pth` downloaded from the official PyTorch: https://download.pytorch.org/models/resnet34-333f7ec4.pth
+The pre-trained backbone weights of ResNet-34 follow the [resnet34-333f7ec4.pth](https://download.pytorch.org/models/resnet34-333f7ec4.pth) downloaded from the official PyTorch. 
 ```
 python train_teacher_imagenet.py
     --dist-url 'tcp://127.0.0.1:55515' \
@@ -265,6 +265,39 @@ python train_student_imagenet.py \
 | Top-1 | 73.31 | 75.48 | 69.75 | 72.16 | **72.39** |
 | Top-5 | 91.42 | 92.67 | 89.07 | 90.85 | **91.00** |
 | Pretrained Models | [resnet34_0](https://drive.google.com/file/d/1FojZDTafcQj4-vu9TKuq_ss36mbCp3UJ/view?usp=sharing) | [resnet34_1](https://drive.google.com/file/d/1LtZSKtAVr30xn8Yb3FIm-xd5HTsSAwX1/view?usp=sharing) | [resnet18](https://download.pytorch.org/models/resnet18-5c106cde.pth) | [resnet18_0](https://drive.google.com/file/d/1jqoNEAkNgHpX6HS6nyWegMfHMisl2020/view?usp=sharing)| [resnet18_1](https://drive.google.com/file/d/1O5yM-3rJvsU6nrAqCncVMNSZ6HsJTKQN/view?usp=sharing) |
+
+## Perform Online Mutual KD experiments on CIFAR-100 dataset
+
+Online Mutual KD train two same networks to teach each other. More commands for training various student architectures can be found in [train_online_kd_cifar.sh](https://github.com/winycg/HSAKD/blob/main/train_online_kd_cifar.sh)
+
+| Network | Baseline |  HSSAKD (Online) |
+|:---------------:|:-----------------:|:-----------------:|
+| WRN-40-2 | 76.44±0.20 | 82.58±0.21 |
+| WRN-40-1 | 71.95±0.59 | 76.67±0.41 |
+| ResNet-56 | 73.00±0.17 | 78.16±0.56 |
+| ResNet-32x4 | 79.56±0.23 | 84.91±0.19 |
+| VGG-13 | 75.35±0.21 | 80.44±0.05 |
+| MobileNetV2 | 73.51±0.26 | 78.85±0.13 |
+| ShuffleNetV1 | 71.74±0.35 | 78.34±0.03 |
+| ShuffleNetV2 | 72.96±0.33 | 79.98±0.12 |
+
+## Perform Online Mutual KD experiments on ImageNet dataset
+
+```
+python train_online_kd_imagenet.py \
+    --data ./data/ImageNet/ \
+    --arch resnet18_resnet18 \
+    --dist-url 'tcp://127.0.0.1:2222' \
+    --dist-backend 'nccl' \
+    --multiprocessing-distributed \
+    --gpu-id 0,1,2,3,4,5,6,7 \
+    --world-size 1 --rank 0
+```
+
+| Network | Baseline |  HSSAKD (Online) |
+|:---------------:|:-----------------:|:-----------------:|
+| ResNet-18 | 69.75 | 71.49 |
+
 
 
 ## Citation

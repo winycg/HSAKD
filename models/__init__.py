@@ -6,3 +6,4 @@ from .ShuffleNetv1 import *
 from .ShuffleNetv2 import *
 from .mobilenetv2 import *
 from .resnet_imagenet import *
+from .mutual_kd_net import *

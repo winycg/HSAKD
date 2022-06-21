@@ -1,0 +1,17 @@
+==========
+Args:Namespace(arch='shufflev1_shufflev1', batch_size=64, checkpoint_dir='./checkpoint/train_online_kd_cifar_arch_shufflev1_shufflev1_dataset_cifar100_seed0', data='/home/ycg/hhd/dataset/', dataset='cifar100', epochs=1, evaluate=False, gpu_id='0', init_lr=0.01, kd_T=3, log_dir='train_online_kd_cifar_arch_shufflev1_shufflev1_dataset_cifar100_seed0', log_txt='result/train_online_kd_cifar_arch_shufflev1_shufflev1_dataset_cifar100_seed0.txt', lr_type='multistep', manual_seed=0, milestones=[150, 180, 210], num_workers=8, resume=False, sgdr_t=300, warmup_epoch=0, weight_decay=0.0005)
+==========
+==========
+Args:Namespace(arch='shufflev1_shufflev1', batch_size=64, checkpoint_dir='./checkpoint/train_online_kd_cifar_arch_shufflev1_shufflev1_dataset_cifar100_seed0', data='/home/ycg/hhd/dataset/', dataset='cifar100', epochs=1, evaluate=False, gpu_id='0', init_lr=0.01, kd_T=3, log_dir='train_online_kd_cifar_arch_shufflev1_shufflev1_dataset_cifar100_seed0', log_txt='result/train_online_kd_cifar_arch_shufflev1_shufflev1_dataset_cifar100_seed0.txt', lr_type='multistep', manual_seed=0, milestones=[150, 180, 210], num_workers=8, resume=False, sgdr_t=300, warmup_epoch=0, weight_decay=0.0005)
+==========
+Epoch:0	 lr:0.01000	 duration:471.176
+train_loss:41.14524	 train_loss_cls:39.77589	 train_loss_div:1.36935
+Train Top-1 ss_accuracy: [[0.0482, 0.0515, 0.0502], [0.0493, 0.052, 0.0525]]
+Train Top-1 class_accuracy: [[0.0715, 0.0724, 0.0696, 0.1025], [0.0714, 0.0738, 0.0734, 0.1037]]
+test epoch:0	 test_loss_cls:7.38271
+Top-1 ss_accuracy: [[0.0891, 0.0968, 0.0977], [0.0886, 0.0939, 0.0943]]
+Top-1 class_accuracy: [[0.1152, 0.1251, 0.1203, 0.1644], [0.1167, 0.116, 0.1113, 0.137]]
+test epoch:0	 test_loss_cls:7.38271
+Top-1 ss_accuracy: [[0.0891, 0.0968, 0.0977], [0.0886, 0.0939, 0.0943]]
+Top-1 class_accuracy: [[0.1152, 0.1251, 0.1203, 0.1644], [0.1167, 0.116, 0.1113, 0.137]]
+best_accuracy: 0.1644 

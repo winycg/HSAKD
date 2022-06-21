@@ -1,0 +1,14 @@
+==========
+Args:Namespace(arch='WRN_40_1_WRN_40_1', batch_size=64, checkpoint_dir='./checkpoint/train_online_kd_cifar_arch_WRN_40_1_WRN_40_1_dataset_cifar100_seed0', data='/home/ycg/hhd/dataset/', dataset='cifar100', epochs=1, evaluate=False, gpu_id='0', init_lr=0.01, kd_T=3, log_dir='train_online_kd_cifar_arch_WRN_40_1_WRN_40_1_dataset_cifar100_seed0', log_txt='result/train_online_kd_cifar_arch_WRN_40_1_WRN_40_1_dataset_cifar100_seed0.txt', lr_type='multistep', manual_seed=0, milestones=[150, 180, 210], num_workers=8, resume=False, sgdr_t=300, warmup_epoch=0, weight_decay=0.0005)
+==========
+Epoch:0	 lr:0.01000	 duration:213.741
+train_loss:43.85046	 train_loss_cls:43.64826	 train_loss_div:0.20220
+Train Top-1 ss_accuracy: [[0.0077, 0.0081, 0.0087], [0.0069, 0.0084, 0.0087]]
+Train Top-1 class_accuracy: [[0.0314, 0.0334, 0.0326, 0.0434], [0.0301, 0.0338, 0.0325, 0.0498]]
+test epoch:0	 test_loss_cls:7.95888
+Top-1 ss_accuracy: [[0.0133, 0.0136, 0.0144], [0.0115, 0.0152, 0.0168]]
+Top-1 class_accuracy: [[0.0476, 0.0573, 0.0535, 0.0779], [0.0463, 0.0556, 0.0582, 0.0839]]
+test epoch:0	 test_loss_cls:7.95888
+Top-1 ss_accuracy: [[0.0133, 0.0136, 0.0144], [0.0115, 0.0152, 0.0168]]
+Top-1 class_accuracy: [[0.0476, 0.0573, 0.0535, 0.0779], [0.0463, 0.0556, 0.0582, 0.0839]]
+best_accuracy: 0.0839 

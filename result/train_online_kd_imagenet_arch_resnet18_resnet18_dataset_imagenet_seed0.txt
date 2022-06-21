@@ -1,0 +1,6 @@
+==========
+Args:Namespace(arch='resnet18_resnet18', batch_size=2, checkpoint_dir='./checkpoint', data='/dev/shm/', dataset='imagenet', dist_backend='nccl', dist_url='tcp://127.0.0.1:2222', epochs=100, evaluate=False, gpu_id='0,1', init_lr=0.1, kd_T=3, log_dir='train_online_kd_imagenet_arch_resnet18_resnet18_dataset_imagenet_seed0', log_txt='result/train_online_kd_imagenet_arch_resnet18_resnet18_dataset_imagenet_seed0.txt', manual_seed=0, milestones=[30, 60, 90], multiprocessing_distributed=True, num_workers=16, rank=0, resume=False, traindir='/dev/shm/train', valdir='/dev/shm/val', warmup_epoch=0, weight_decay=0.0001, world_size=1)
+==========
+==========
+Args:Namespace(arch='resnet18_resnet18', batch_size=2, checkpoint_dir='./checkpoint', data='/dev/shm/ImageNet/', dataset='imagenet', dist_backend='nccl', dist_url='tcp://127.0.0.1:2222', epochs=100, evaluate=False, gpu_id='0,1', init_lr=0.1, kd_T=3, log_dir='train_online_kd_imagenet_arch_resnet18_resnet18_dataset_imagenet_seed0', log_txt='result/train_online_kd_imagenet_arch_resnet18_resnet18_dataset_imagenet_seed0.txt', manual_seed=0, milestones=[30, 60, 90], multiprocessing_distributed=True, num_workers=16, rank=0, resume=False, traindir='/dev/shm/ImageNet/train', valdir='/dev/shm/ImageNet/val', warmup_epoch=0, weight_decay=0.0001, world_size=1)
+==========

@@ -1,0 +1,20 @@
+==========
+Args:Namespace(arch='shufflev2_shufflev2', batch_size=64, checkpoint_dir='./checkpoint/train_online_kd_cifar_arch_shufflev2_shufflev2_dataset_cifar100_seed0', data='/home/ycg/hhd/dataset/', dataset='cifar100', epochs=1, evaluate=False, gpu_id='0', init_lr=0.01, kd_T=3, log_dir='train_online_kd_cifar_arch_shufflev2_shufflev2_dataset_cifar100_seed0', log_txt='result/train_online_kd_cifar_arch_shufflev2_shufflev2_dataset_cifar100_seed0.txt', lr_type='multistep', manual_seed=0, milestones=[150, 180, 210], num_workers=8, resume=False, sgdr_t=300, warmup_epoch=0, weight_decay=0.0005)
+==========
+==========
+Args:Namespace(arch='shufflev2_shufflev2', batch_size=64, checkpoint_dir='./checkpoint/train_online_kd_cifar_arch_shufflev2_shufflev2_dataset_cifar100_seed0', data='/home/ycg/hhd/dataset/', dataset='cifar100', epochs=1, evaluate=False, gpu_id='0', init_lr=0.01, kd_T=3, log_dir='train_online_kd_cifar_arch_shufflev2_shufflev2_dataset_cifar100_seed0', log_txt='result/train_online_kd_cifar_arch_shufflev2_shufflev2_dataset_cifar100_seed0.txt', lr_type='multistep', manual_seed=0, milestones=[150, 180, 210], num_workers=8, resume=False, sgdr_t=300, warmup_epoch=0, weight_decay=0.0005)
+==========
+==========
+Args:Namespace(arch='shufflev2_shufflev2', batch_size=64, checkpoint_dir='./checkpoint/train_online_kd_cifar_arch_shufflev2_shufflev2_dataset_cifar100_seed0', data='/home/ycg/hhd/dataset/', dataset='cifar100', epochs=1, evaluate=False, gpu_id='0', init_lr=0.01, kd_T=3, log_dir='train_online_kd_cifar_arch_shufflev2_shufflev2_dataset_cifar100_seed0', log_txt='result/train_online_kd_cifar_arch_shufflev2_shufflev2_dataset_cifar100_seed0.txt', lr_type='multistep', manual_seed=0, milestones=[150, 180, 210], num_workers=8, resume=False, sgdr_t=300, warmup_epoch=0, weight_decay=0.0005)
+==========
+Epoch:0	 lr:0.01000	 duration:378.254
+train_loss:41.96235	 train_loss_cls:41.70390	 train_loss_div:0.25844
+Train Top-1 ss_accuracy: [[0.0159, 0.0213, 0.0194], [0.012, 0.0183, 0.0184]]
+Train Top-1 class_accuracy: [[0.0444, 0.0504, 0.0495, 0.0711], [0.0417, 0.0502, 0.0492, 0.0687]]
+test epoch:0	 test_loss_cls:7.30475
+Top-1 ss_accuracy: [[0.0456, 0.0568, 0.049], [0.0334, 0.0502, 0.0483]]
+Top-1 class_accuracy: [[0.0936, 0.1011, 0.0943, 0.1218], [0.0897, 0.0921, 0.0894, 0.1208]]
+test epoch:0	 test_loss_cls:7.30475
+Top-1 ss_accuracy: [[0.0456, 0.0568, 0.049], [0.0334, 0.0502, 0.0483]]
+Top-1 class_accuracy: [[0.0936, 0.1011, 0.0943, 0.1218], [0.0897, 0.0921, 0.0894, 0.1208]]
+best_accuracy: 0.1218 

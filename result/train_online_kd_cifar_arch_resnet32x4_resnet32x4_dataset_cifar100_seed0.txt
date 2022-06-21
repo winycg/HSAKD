@@ -1,0 +1,17 @@
+==========
+Args:Namespace(arch='resnet32x4_resnet32x4', batch_size=64, checkpoint_dir='./checkpoint/train_online_kd_cifar_arch_resnet32x4_resnet32x4_dataset_cifar100_seed0', data='/home/ycg/hhd/dataset/', dataset='cifar100', epochs=1, evaluate=False, gpu_id='0', init_lr=0.01, kd_T=3, log_dir='train_online_kd_cifar_arch_resnet32x4_resnet32x4_dataset_cifar100_seed0', log_txt='result/train_online_kd_cifar_arch_resnet32x4_resnet32x4_dataset_cifar100_seed0.txt', lr_type='multistep', manual_seed=0, milestones=[150, 180, 210], num_workers=8, resume=False, sgdr_t=300, warmup_epoch=0, weight_decay=0.0005)
+==========
+==========
+Args:Namespace(arch='resnet32x4_resnet32x4', batch_size=64, checkpoint_dir='./checkpoint/train_online_kd_cifar_arch_resnet32x4_resnet32x4_dataset_cifar100_seed0', data='/home/ycg/hhd/dataset/', dataset='cifar100', epochs=1, evaluate=False, gpu_id='0', init_lr=0.01, kd_T=3, log_dir='train_online_kd_cifar_arch_resnet32x4_resnet32x4_dataset_cifar100_seed0', log_txt='result/train_online_kd_cifar_arch_resnet32x4_resnet32x4_dataset_cifar100_seed0.txt', lr_type='multistep', manual_seed=0, milestones=[150, 180, 210], num_workers=8, resume=False, sgdr_t=300, warmup_epoch=0, weight_decay=0.0005)
+==========
+Epoch:0	 lr:0.01000	 duration:692.951
+train_loss:39.45676	 train_loss_cls:38.96839	 train_loss_div:0.48837
+Train Top-1 ss_accuracy: [[0.0442, 0.0458, 0.0483], [0.0444, 0.0445, 0.0477]]
+Train Top-1 class_accuracy: [[0.0776, 0.0786, 0.0776, 0.1091], [0.0787, 0.0779, 0.0772, 0.1058]]
+test epoch:0	 test_loss_cls:7.24091
+Top-1 ss_accuracy: [[0.0859, 0.0813, 0.0756], [0.0878, 0.0848, 0.0807]]
+Top-1 class_accuracy: [[0.116, 0.109, 0.0962, 0.1511], [0.1181, 0.1088, 0.0996, 0.163]]
+test epoch:0	 test_loss_cls:7.24091
+Top-1 ss_accuracy: [[0.0859, 0.0813, 0.0756], [0.0878, 0.0848, 0.0807]]
+Top-1 class_accuracy: [[0.116, 0.109, 0.0962, 0.1511], [0.1181, 0.1088, 0.0996, 0.163]]
+best_accuracy: 0.163 

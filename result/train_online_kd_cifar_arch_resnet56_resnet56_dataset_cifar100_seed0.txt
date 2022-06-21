@@ -1,0 +1,20 @@
+==========
+Args:Namespace(arch='resnet56_resnet56', batch_size=64, checkpoint_dir='./checkpoint/train_online_kd_cifar_arch_resnet56_resnet56_dataset_cifar100_seed0', data='/home/ycg/hhd/dataset/', dataset='cifar100', epochs=1, evaluate=False, gpu_id='0', init_lr=0.01, kd_T=3, log_dir='train_online_kd_cifar_arch_resnet56_resnet56_dataset_cifar100_seed0', log_txt='result/train_online_kd_cifar_arch_resnet56_resnet56_dataset_cifar100_seed0.txt', lr_type='multistep', manual_seed=0, milestones=[150, 180, 210], num_workers=8, resume=False, sgdr_t=300, warmup_epoch=0, weight_decay=0.0005)
+==========
+==========
+Args:Namespace(arch='resnet56_resnet56', batch_size=64, checkpoint_dir='./checkpoint/train_online_kd_cifar_arch_resnet56_resnet56_dataset_cifar100_seed0', data='/home/ycg/hhd/dataset/', dataset='cifar100', epochs=1, evaluate=False, gpu_id='0', init_lr=0.01, kd_T=3, log_dir='train_online_kd_cifar_arch_resnet56_resnet56_dataset_cifar100_seed0', log_txt='result/train_online_kd_cifar_arch_resnet56_resnet56_dataset_cifar100_seed0.txt', lr_type='multistep', manual_seed=0, milestones=[150, 180, 210], num_workers=8, resume=False, sgdr_t=300, warmup_epoch=0, weight_decay=0.0005)
+==========
+==========
+Args:Namespace(arch='resnet56_resnet56', batch_size=64, checkpoint_dir='./checkpoint/train_online_kd_cifar_arch_resnet56_resnet56_dataset_cifar100_seed0', data='/home/ycg/hhd/dataset/', dataset='cifar100', epochs=1, evaluate=False, gpu_id='0', init_lr=0.01, kd_T=3, log_dir='train_online_kd_cifar_arch_resnet56_resnet56_dataset_cifar100_seed0', log_txt='result/train_online_kd_cifar_arch_resnet56_resnet56_dataset_cifar100_seed0.txt', lr_type='multistep', manual_seed=0, milestones=[150, 180, 210], num_workers=8, resume=False, sgdr_t=300, warmup_epoch=0, weight_decay=0.0005)
+==========
+Epoch:0	 lr:0.01000	 duration:294.369
+train_loss:43.33140	 train_loss_cls:42.94350	 train_loss_div:0.38790
+Train Top-1 ss_accuracy: [[0.0092, 0.0084, 0.0119], [0.0095, 0.0094, 0.0127]]
+Train Top-1 class_accuracy: [[0.033, 0.0319, 0.0367, 0.0465], [0.0351, 0.0345, 0.0379, 0.0482]]
+test epoch:0	 test_loss_cls:7.83578
+Top-1 ss_accuracy: [[0.0217, 0.0182, 0.0276], [0.0219, 0.0203, 0.0309]]
+Top-1 class_accuracy: [[0.0632, 0.061, 0.0645, 0.0875], [0.066, 0.0651, 0.0686, 0.0874]]
+test epoch:0	 test_loss_cls:7.83578
+Top-1 ss_accuracy: [[0.0217, 0.0182, 0.0276], [0.0219, 0.0203, 0.0309]]
+Top-1 class_accuracy: [[0.0632, 0.061, 0.0645, 0.0875], [0.066, 0.0651, 0.0686, 0.0874]]
+best_accuracy: 0.0875 

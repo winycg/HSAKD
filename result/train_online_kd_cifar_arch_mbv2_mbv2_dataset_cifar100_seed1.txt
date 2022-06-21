@@ -1,0 +1,9 @@
+==========
+Args:Namespace(arch='mbv2_mbv2', batch_size=64, checkpoint_dir='/home/ycg/hhd/winycg/checkpoints/hsakd_checkpoints/train_online_kd_cifar_arch_mbv2_mbv2_dataset_cifar100_seed1', data='/home/user/hhd/dataset/', dataset='cifar100', epochs=240, evaluate=False, gpu_id='0', init_lr=0.01, kd_T=3, log_dir='train_online_kd_cifar_arch_mbv2_mbv2_dataset_cifar100_seed1', log_txt='result/train_online_kd_cifar_arch_mbv2_mbv2_dataset_cifar100_seed1.txt', lr_type='multistep', manual_seed=1, milestones=[150, 180, 210], num_workers=8, resume=False, sgdr_t=300, warmup_epoch=0, weight_decay=0.0005)
+==========
+==========
+Args:Namespace(arch='mbv2_mbv2', batch_size=64, checkpoint_dir='/home/ycg/hhd/winycg/checkpoints/hsakd_checkpoints/train_online_kd_cifar_arch_mbv2_mbv2_dataset_cifar100_seed1', data='/home/ycg/hhd/dataset/', dataset='cifar100', epochs=240, evaluate=False, gpu_id='0', init_lr=0.01, kd_T=3, log_dir='train_online_kd_cifar_arch_mbv2_mbv2_dataset_cifar100_seed1', log_txt='result/train_online_kd_cifar_arch_mbv2_mbv2_dataset_cifar100_seed1.txt', lr_type='multistep', manual_seed=1, milestones=[150, 180, 210], num_workers=8, resume=False, sgdr_t=300, warmup_epoch=0, weight_decay=0.0005)
+==========
+==========
+Args:Namespace(arch='mbv2_mbv2', batch_size=64, checkpoint_dir='/home/ycg/hhd/winycg/checkpoints/hsakd_checkpoints/train_online_kd_cifar_arch_mbv2_mbv2_dataset_cifar100_seed1', data='/home/ycg/hhd/dataset/', dataset='cifar100', epochs=240, evaluate=False, gpu_id='0', init_lr=0.01, kd_T=3, log_dir='train_online_kd_cifar_arch_mbv2_mbv2_dataset_cifar100_seed1', log_txt='result/train_online_kd_cifar_arch_mbv2_mbv2_dataset_cifar100_seed1.txt', lr_type='multistep', manual_seed=1, milestones=[150, 180, 210], num_workers=8, resume=False, sgdr_t=300, warmup_epoch=0, weight_decay=0.0005)
+==========
