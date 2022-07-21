@@ -11,6 +11,7 @@
 
 - 🏆 __SOTA of Knowledge Distillation for student ResNet-18 trained by teacher ResNet-34 on ImageNet.__ 
 
+- The extended version of HSAKD is accepted by IEEE Transactions on Neural Networks and Learning Systems.
 
 [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/hierarchical-self-supervised-augmented/knowledge-distillation-on-imagenet)](https://paperswithcode.com/sota/knowledge-distillation-on-imagenet?p=hierarchical-self-supervised-augmented)
 
@@ -310,4 +311,12 @@ python train_online_kd_imagenet.py \
   pages = {1217--1223},
   year={2021}
 }
+
+@article{yang2022hssakd,
+  author={Yang, Chuanguang and An, Zhulin and Cai, Linhang and Xu, Yongjun},
+  journal={IEEE Transactions on Neural Networks and Learning Systems}, 
+  title={Knowledge Distillation Using Hierarchical Self-Supervision Augmented Distribution}, 
+  year={2022},
+  pages={1-15},
+  doi={10.1109/TNNLS.2022.3186807}}
 ```
