@@ -203,7 +203,7 @@ data/ImageNet
 
 The pre-trained backbone weights of ResNet-34 follow the [resnet34-333f7ec4.pth](https://download.pytorch.org/models/resnet34-333f7ec4.pth) downloaded from the official PyTorch. 
 ```
-python train_teacher_imagenet.py
+python train_teacher_imagenet.py \
     --dist-url 'tcp://127.0.0.1:55515' \
     --data ./data/ImageNet/ \
     --dist-backend 'nccl' \
@@ -219,7 +219,7 @@ python train_teacher_imagenet.py
 
 It can lead to a better accuracy for teacher backbone towards our empirical study.
 ```
-python train_teacher_imagenet.py
+python train_teacher_imagenet.py \
     --dist-url 'tcp://127.0.0.1:2222' \
     --data ./data/ImageNet/ \
     --dist-backend 'nccl' \
